@@ -1,0 +1,49 @@
+<!doctype html> 
+<!--Dont forget to run gulp after you set up basic html structure, this
+saves it to the public directory.  Actually you can run gulp watch to keep
+gulp files updated-->
+
+<html>
+    <head>
+        <title>En Fuego Dating App</title>
+    <!--Add css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--add js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script type="x-mustache-template" id="profile-block">
+        <div class="profile-box">
+            <div class="image-section">
+                <img src="{{ pictureLarge }}">
+                <h2>{{ nameFirst }} {{ nameLast}}</h2>
+                <h3>{{ gender }}</h3>
+                <button class="Like">Like</button>
+                <button class="Dislike">No Way</button>
+            </div>
+        
+            <div class="infobox">
+                <p class="location">Where am I? {{ locationCity }}</p>
+                <p class="email">Send me a message! {{ email }}</p>
+            </div>
+        </div>
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>En Fuego Dating</h1>
+            <h2>Revel in Other's Hotness</h2>
+        </header>
+
+        <main>
+            <section id="profile">
+                <ul></ul>
+            </section>
+
+
+        </main>
+    </body>
+</html>

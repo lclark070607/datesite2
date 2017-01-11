@@ -1,0 +1,44 @@
+/* Include Foundation*/
+@import '../node_modules/foundation-sites/scss/foundation'; //because its in a scss folder
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    background-color: lightsalmon;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    text-decoration: none;
+    width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  padding: 2%;
+}
+
+h2 {
+    text-shadow:  1px 1px 1px rgba(0,0,0,0.10);
+
+}
+
+button {
+    background-color: lightsalmon;
+    padding: 3%;
+    cursor: clickable;
+    font-family: 'Roboto', sans-serif;
+}
